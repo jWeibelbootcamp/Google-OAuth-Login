@@ -20,6 +20,8 @@
   "homepage": "https://github.com/jWeibelbootcamp/Google-OAuth-Login#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
+    "bulma": "^0.9.4",
+    "bulma-start": "^0.0.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-handlebars": "^6.0.6",
