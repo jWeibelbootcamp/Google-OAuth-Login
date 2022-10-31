@@ -26,3 +26,9 @@ loginBtn.addEventListener('click', loginFunction);
 function loginFunction (event) {
     document.location.replace("/login");
 };
+
+const registerBtn = document.getElementById("register-btn");
+registerBtn.addEventListener('click', registerFunction);
+function registerFunction (event) {
+    document.location.replace("/register");
+};
