@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Dog, User, Reservations } = require("../../models");
 //DO WE NEED SEQUELIZE HERE?? const sequelize = require(' blah blah)
 
-router.get('/', async (req, res) => {
+router.get('/dashboard', async (req, res) => {
 	try {
 			const dogData = await Dog.findAll({
 					include: [{model: Reservations}],
@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
 	}  
 });
 
-router.post('/', (req, res) => {
+router.post('/dashboard', (req, res) => {
 	Dog.create({
 		dogName: req.body.dogName,
         dogBreed: req.body.dogBreed,

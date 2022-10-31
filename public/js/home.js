@@ -24,5 +24,5 @@
 const loginBtn = document.getElementById("login-btn");
 loginBtn.addEventListener('click', loginFunction);
 function loginFunction (event) {
-    window.open("/login");
+    document.location.replace("/login");
 };
