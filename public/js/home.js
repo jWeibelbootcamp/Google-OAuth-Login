@@ -1,11 +1,11 @@
-const loginBtn = document.getElementById("grooming");
-loginBtn.addEventListener('click', grooming);
-function grooming(event) {
-    window.open("layouts/groomingBooking.handlebars")
+const loginBtn = document.getElementById("login-btn");
+loginBtn.addEventListener('click', loginFunction);
+function loginFunction (event) {
+    res.render("login")
 }
 
-const registerBtn = document.getElementById("grooming");
-groomingBtn.addEventListener('click', grooming);
-function grooming(event) {
-    window.open("layouts/groomingBooking.handlebars")
+const registerBtn = document.getElementById("register-btn");
+groomingBtn.addEventListener('click', registerFunction);
+function registerFunction (event) {
+    res.render("register")
 }
