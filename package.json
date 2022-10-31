@@ -1,28 +1,30 @@
 {
-  "name": "projects",
+  "name": "google-oauth-login",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Full Stack Application with Google OAuth Login",
+  "main": "server.js",
   "scripts": {
-    "test": "cross-env NODE_ENV=production node server",
-    "dev": "cross-env NODE_ENV=development nodemon app"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jWeibelbootcamp/Google-OAuth-Login.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "cross-env": "^7.0.3",
-    "nodemon": "^2.0.20"
+  "bugs": {
+    "url": "https://github.com/jWeibelbootcamp/Google-OAuth-Login/issues"
   },
+  "homepage": "https://github.com/jWeibelbootcamp/Google-OAuth-Login#readme",
   "dependencies": {
-    "connect-session-sequelize": "^7.1.5",
+    "bcrypt": "^5.1.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-handlebars": "^6.0.6",
     "express-session": "^1.17.3",
-    "method-override": "^3.0.0",
-    "moment": "^2.29.4",
-    "morgan": "^1.10.0",
+    "express-session-sequelize": "^2.3.0",
     "mysql2": "^2.3.3",
     "passport": "^0.6.0",
     "passport-google-oauth20": "^2.0.0",
