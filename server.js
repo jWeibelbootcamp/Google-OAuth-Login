@@ -34,7 +34,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// app.use('/', index);
+app.use('/', require('./controllers/index'));
 
 app.get('/', (req, res) => {
     res.render('home', {layout : 'main'});
