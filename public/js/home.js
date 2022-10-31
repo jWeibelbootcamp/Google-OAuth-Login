@@ -30,5 +30,6 @@ function loginFunction (event) {
 const registerBtn = document.getElementById("register-btn");
 registerBtn.addEventListener('click', registerFunction);
 function registerFunction (event) {
+		console.log(event.target);
     document.location.replace("/register");
 };
