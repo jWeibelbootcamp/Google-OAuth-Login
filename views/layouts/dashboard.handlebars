@@ -8,8 +8,8 @@
 		<link rel="stylesheet" src="/public/css/style.css">
     <title>The Howl-ton</title>
 </head>
-<body>
-  <nav class="navbar">
+<body class="flex-column min-100-vh">
+    <nav class="navbar">
         <ul class="flexx-row">
             <li class="logo-image"><img src="../../images/project2-headericon.jpg" class="logo-image" />
             </li>
@@ -19,7 +19,19 @@
             <li class="li=inline nav-item"><a href="#" id="logout">Logout</a></li>
         </ul>
     </nav>
+    <header class="hero">
+        <h1 class="dash-title"><a href="/dashboard">My Account</a></h1>
+    </header>
+
+    <main class="col-auto">
     {{{body}}}
+    </main>
+
+    <footer class="footer flex-row justify-left">
+        <a href="/dashboard/new">Add a Dog</a>
+    </footer>
 </body>
+
+<script src="/js/logout.js"></script>
+
 </html>
-<script src="/js/home.js"></script>
