@@ -15,7 +15,7 @@ router.get('/dashboard', async (req, res) => {
 	}  
 });
 
-router.post('/dashboard', (req, res) => {
+router.post('/newdog', (req, res) => {
 	Dog.create({
 		dogName: req.body.dogName,
         dogBreed: req.body.dogBreed,

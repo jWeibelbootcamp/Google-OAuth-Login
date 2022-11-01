@@ -25,6 +25,10 @@ router.get('/dashboard', (req, res) => {
     res.render('dashboard')
 });
 
+router.get('/dashboard/new', (req, res) => {
+    res.render('newdog')
+});
+
 router.get('/boardingBooking', (req, res) => {
     res.render('boardingBooking')
 });
