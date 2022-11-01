@@ -2,6 +2,7 @@ const { User, Dog } = require('../../models');
 
 const router = require('express').Router();
 
+// get single user by username.
 // change back to just '/user' after session.
 router.get('/user/:username', async (req, res) => {
     try {
@@ -19,6 +20,7 @@ router.get('/user/:username', async (req, res) => {
     }
 });
 
+// get all dogs for 1 user.
 // change back to just '/' after session.
 router.get('/:user_id', async (req, res) => {
     try {
@@ -36,6 +38,8 @@ router.get('/:user_id', async (req, res) => {
     }
 });
 
+
+// create a dog.
 router.post('/', async (req, res) => {
     try {
         const dogData = await Dog.create({
