@@ -1,3 +1,25 @@
+<head>
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#dropoffDate" ).datepicker();
+  } );
+  </script>
+    <script>
+  $( function() {
+    $( "#pickupDate" ).datepicker();
+  } );
+  </script>
+    <script>
+  $( function() {
+    $( "#daycareDate" ).datepicker();
+  } );
+  </script>
+</head> 
+ 
  <div id="bookingOptions">
  <div class="boardingCard">
   <img class="card-img-top" src="https://www.puppyhavenatl.com/wp-content/uploads/2022/03/Dog-Boarding-Icon.png" alt="Card image cap">
@@ -41,6 +63,8 @@
             boarding offers the amenities of two days of daycare plus a night of boarding. This means your dog will enjoy ample amounts of group playtime and 
             socialization during his or her vacation at Muttel-6.</p>
         {{!-- TO-DO: add date selector --}}
+        <p>Drop-Off Date: <input type="text" id="dropoffDate"></p>
+        <p>Pick-Up Date: <input type="text" id="pickupDate"></p>
     <h4>Would you like to add grooming to your boarding session?</h4>
         <button class="button" id="yesGrooming">Yes Please!</button>
         <button class="button" id="noGrooming">No Thank-You</button>
@@ -54,6 +78,7 @@
         deter destructive behaviors such as digging, chewing and excessive barking. These behaviors often are due to boredom and a lack of exercise. 
         Dogs burn plenty of energy during their time at Muttel-6, making them socially satisfied and ready for your time together when you pick them up.</p>
     {{!-- TO-DO: add date selector --}}
+    <p>Date: <input type="text" id="daycareDate"></p>
 <h4>Would you like to add grooming to your daycare appointment?</h4>
     <button class="button" id="GroomingYes">Yes Please!</button>
     <button class="button" id="GroomingNo">No Thank-You</button>
