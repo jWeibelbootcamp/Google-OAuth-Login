@@ -14,18 +14,6 @@
 // document.querySelector('#logout').addEventListener('click', logout);
 
 
-var groomingBtn = document.getElementById("grooming");
-groomingBtn.addEventListener('click', grooming);
-function grooming(event) {
-    document.location.replace("/services")
-}
-
-var daycareBtn = document.getElementById("daycare");
-daycareBtn.addEventListener('click', daycare);
-function daycare (event) {
-    document.location.replace("/services")
-}
-
 var boardingBtn = document.getElementById("boarding");
 boardingBtn.addEventListener('click', boarding);
 function boarding (event) {

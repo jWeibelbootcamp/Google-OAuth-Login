@@ -25,6 +25,7 @@ router.get('/dashboard', (req, res) => {
 
 router.get('/services', (req, res) => {
     res.render('services')
+});
 
 router.get('/dashboard/new', (req, res) => {
     res.render('newdog')
