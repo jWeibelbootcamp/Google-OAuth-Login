@@ -1,38 +1,36 @@
 
 
-<div class="card">
-    <div class="card-header">
+<div class="card text-right" style="width: 22rem;">
+    <div class="card-header text-white bg-secondary mb-3">
         <h2>Add New Dog</h2>
     </div>
     <form id="new-dog-form">
-                
-        <label for="dog-name">Dog Name</label>
-        <input type="text" id="dog-name" name="dog-name"/>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><label for="dog-name">Dog Name</label>
+            <input type="text" id="dog-name" name="dog-name"/></li>
     
-    
-        <label for="dog-breed">Breed:</label>
-        <input type="text" id="dog-breed" name="dog-breed">
-    
-        <label for="dog-sex">Sex:</label>
-        <select id="dog-sex" name="dog-sex">
-            <option value="male">male</option>
-            <option value="female">female</option>
-    
-        <label for="dog-age">Age:</label>
-        <input type="text" id="dog-age" name="dog-age">
-    
-        <label for="dog-weight">Weight:</label>
-        <input type="text" id="dog-weight" name="dog-weight">
-    
-        <label for="dog-vet">
-            Veterinarian:</label>
-        <input type="text" id="dog-vet" name="dog-vet">
-    
-        <label for="dog-conditions">
-            Tell Us About Your Dog:</label>
-        <textarea id="dog-conditions" name="dog-conditions"></textarea>
-    
-        <button type="submit" class="btn">Add Dog</button>
+            <li class="list-group-item"><label for="dog-breed">Breed:</label>
+            <input type="text" id="dog-breed" name="dog-breed"></li>
+
+            <li class="list-group-item"><label for="dog-age">Age:</label>
+            <input type="text" id="dog-age" name="dog-age"></li>
+        
+            {{!-- <li><label for="dog-sex">Sex:</label>
+            <select id="dog-sex" name="dog-sex">
+                <option value="male">male</option>
+                <option value="female">female</option></li> --}}
+                          
+            <li class="list-group-item"><label for="dog-weight">Weight:</label>
+            <input type="text" id="dog-weight" name="dog-weight"></li>
+        
+            <li class="list-group-item"><label for="dog-vet">Veterinarian:</label>
+            <input type="text" id="dog-vet" name="dog-vet"></li>
+        
+            <li class="list-group-item"><label for="dog-conditions">Tell Us About Your Dog:</label>
+            <textarea id="dog-conditions" name="dog-conditions"></textarea></li>
+        
+            <li class="list-group-item"><button type="submit" class="btn btn-primary">Add Dog</button></li> 
+        </ul>
     </form>
 </div>
 
