@@ -14,16 +14,13 @@
     <title>Muttel 6</title>
 </head>
 <body class="flex-column min-100-vh">
-  <nav class="navbar">
-        <ul>
-            <li class="logo-image"><img src="../../images/project2-headericon.jpg" class="logo-image" />
-            </li>
-            <li class="li-inline nav-item"><a href="/">Home</a></li>
-            <li class="li-inline nav-item"><a href="/dashboard">Account</a></li>
-            <li class="li-inline nav-item"><a href="/reviews">Reviews</a></li>
-            <li class="li-inline nav-item"><a href="#" id="logout">Logout</a></li>
-        </ul>
-    </nav>
+ <nav class="navbar" role="navigation" aria-label="main navigation">
+	  <div class="row navbar-brand">
+						<div class="column" aria-hidden="true"><a href="/">Home</a></div>
+      			<div class="column" aria-hidden="true"><a href="/dashboard">Account</a></div>
+      			<div class="column" aria-hidden="true"><a href="reviews">Reviews</a></div>
+		</div>
+</nav>
     {{{body}}}
 </body>
 </html>
