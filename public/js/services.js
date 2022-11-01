@@ -87,7 +87,7 @@ var yesGrooming = document.getElementById("GroomingYes");
 var yesGrooming = document.getElementById("yesGrooming");
 GroomingYes.addEventListener('click', groomingNeeded);
 yesGrooming.addEventListener('click', groomingNeeded);
-function groomingNeeded(event) {
+function groomingNeeded(event) {      
     event.preventDefault;
     boardingBookingSystem.style.display = 'none';
     daycareBookingSystem.style.display = 'none';
