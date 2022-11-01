@@ -1,16 +1,30 @@
 const router = require('express').Router();
 const { Dog, User, Reservations } = require("../../models");
 
-router.put('/register', (req, res) => {
-	user.create({
-		userName: req.body.userName,
+// router.post('/', (req, res) => {
+// 	User.create({
+		// userName: req.body.userName,
+    //     email: req.body.email,
+    // 	password: req.body.password,
+// 	}) 
+// 		.then((dbUserData) => res.json(dbUserData))
+// 		.catch ((err) => {
+// 		res.status(500).json(err);
+// 	});
+// });
+
+router.post('/', async (req, res) => {
+  try {
+      const userData = await User.create({
+        userName: req.body.userName,
         email: req.body.email,
-    	password: req.body.password,
-	}) 
-		.then((dbUserData) => res.json(dbUserData))
-		.catch ((err) => {
-		res.status(500).json(err);
-	});
+    	  password: req.body.password,
+      })
+      res.status(200).json(userData);
+  } catch (err) {
+      console.log(err);
+      res.status(500).json(err);
+  }
 });
 
 router.post('/login', async (req, res) => {
@@ -33,10 +47,10 @@ router.post('/login', async (req, res) => {
         return;
       }
   
-      req.session.save(() => {
-        req.session.userId = user.id;
-        req.session.username = user.username;
-        req.session.loggedIn = true;
+      req.params.save(() => {
+        req.params.userId = user.id;
+        req.params.username = user.username;
+        req.params.loggedIn = true;
   
         res.json({ user, message: 'You are now logged in!' });
       });

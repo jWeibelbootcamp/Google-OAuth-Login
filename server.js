@@ -42,8 +42,8 @@ app.get('/', (req, res) => {
     res.render('home', {layout : 'main'});
 });
 
-// sequelize.sync({ force: false }).then(() => {
+sequelize.sync({ force: false }).then(() => {
 app.listen(PORT, () => {
     console.log(`Listening on Port ${PORT}, at http://localhost:3001.`)
 });
-// });
+});
