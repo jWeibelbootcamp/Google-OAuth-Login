@@ -34,7 +34,8 @@ var dogWeight = 30;
 var totalCost = 0;
 var dropoffDate = 'November 20th';
 var pickupDate = 'November 30th';
-var daysInBoarding = 10;    
+var daysInBoarding = 10;
+var timeInBoarding = 10;    
 
 
 daycareBtn.addEventListener('click', bookingDaycare);
@@ -76,6 +77,9 @@ noGrooming.addEventListener('click', groomingNotNeeded);
 function groomingNotNeeded(event) {
     event.preventDefault;
     boardingBookingSystem.style.display = 'none';
+    dropoffDate = $( "#dropoffDate" ).datepicker({dateFormat: 'MM,dd'}).val();
+    pickupDate = $( "#pickupDate" ).datepicker({dateFormat: 'MM,dd'}).val();
+    daycareDate = $( "#daycareDate" ).datepicker({dateFormat: 'MM,dd'}).val();
     displayConfirmation ();
 }
 
@@ -88,6 +92,9 @@ function groomingNeeded(event) {
     boardingBookingSystem.style.display = 'none';
     daycareBookingSystem.style.display = 'none';
     grooming.style.display = 'block';
+    dropoffDate = $( "#dropoffDate" ).datepicker({dateFormat: 'MM,dd'}).val();
+    pickupDate = $( "#pickupDate" ).datepicker({dateFormat: 'MM,dd'}).val();
+    daycareDate = $( "#daycareDate" ).datepicker({dateFormat: 'MM,dd'}).val();
 }
 
 var fullGroom = document.getElementById("fullGroom");
