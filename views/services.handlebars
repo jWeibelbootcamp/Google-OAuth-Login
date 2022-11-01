@@ -31,6 +31,88 @@
 </div>
 </div>
 
-<div id=""
+<div id="boardingOptions">
+    <div id="boardingBookingSystem" style="display: none;">
+    <h1>Boarding</h1>
+        {{!-- TO-DO: drop down menu with dog registered to user's profile --}}
+            <p>Your dog’s home-away-from-home is complete with climate controlled, private guestrooms for eating and sleeping. Our most pawpular accommodations
+            provide an at home environment for your pet. Upgrade your pup’s experience to one of our luxury suites for the ultimate pampered pooch experience. 
+            Each luxury suite provides at least 24 square feet of privacy for your pups overnight vacation. Unlike traditional kennels, Muttel-6’s dog  
+            boarding offers the amenities of two days of daycare plus a night of boarding. This means your dog will enjoy ample amounts of group playtime and 
+            socialization during his or her vacation at Muttel-6.</p>
+        {{!-- TO-DO: add date selector --}}
+    <h4>Would you like to add grooming to your boarding session?</h4>
+        <button class="button" id="yesGrooming">Yes Please!</button>
+        <button class="button" id="noGrooming">No Thank-You</button>
+</div>
+
+<div id="daycareBookingSystem" style="display: none;">
+    <h1>Doggy Day Care</h1>
+    {{!-- TO-DO: drop down menu with dog registered to user's profile --}}
+        <p>Dog daycare offers a variety of benefits for your pup. First and foremost, it provides a much-needed dose of dog to dog socialization. 
+        Providing interaction and stimulation helps improve social skills and overall behavior. Likewise, dog daycare has been known to help 
+        deter destructive behaviors such as digging, chewing and excessive barking. These behaviors often are due to boredom and a lack of exercise. 
+        Dogs burn plenty of energy during their time at Muttel-6, making them socially satisfied and ready for your time together when you pick them up.</p>
+    {{!-- TO-DO: add date selector --}}
+<h4>Would you like to add grooming to your daycare appointment?</h4>
+    <button class="button" id="GroomingYes">Yes Please!</button>
+    <button class="button" id="GroomingNo">No Thank-You</button>
+</div>
+
+<div id="grooming" style="display: none;">
+            <div id="mainGroomingSession">
+                <div> 
+                <h3>The Full Groom - $70</h3>
+                <u1>Includes:
+                    <li>Custom Cut & Style</li>
+                    <li>Bath, Blow Dry & Brush Out</li>
+                    <li>Blueberry Facial</li>
+                    <li>Ear Cleaningg</li>
+                    <li>Nail Clipping & Grinding</li>
+                </u1>
+                <button class="button" id="fullGroom">Full Groom</button>
+                </div>
+                
+                <div> 
+                <h3>The Luxury Bath - $50</h3>
+                <u1>Includes:
+                    <li>Bath, Blow Dry & Brush Out</li>
+                    <li>Blueberry Facial</li>
+                    <li>Ear Cleaningg</li>
+                    <li>Nail Clipping & Grinding</li>
+                </u1>
+                <button class="button" id="luxuryBath">Luxury Bath</button>
+                </div>
+                
+                <div> 
+                <h3>The Basic Bath - $35</h3>
+                <u1>Includes:
+                    <li>Bath, Blow Dry & Brush Out</li>
+                </u1>
+                <button class="button" id="basicBath">Basic Bath</button>
+                </div>
+                </div>
+                
+                <div id="addonSession" style="display: none;">
+                <form>
+                            <fieldset>
+                                <legend>Add-On's:</legend>
+                                <input type="checkbox" name="addon" value="nailClipping" id="nailClipping">Nail Clipping & Grinding - $20<br>
+                                <input type="checkbox" name="addon" value="teethBrushing" id="teethBrushing">Teeth Brushing - $10<br>
+                                <input type="checkbox" name="addon" value="earCleaning" id="earCleaning">Ear Cleaning - $15<br>
+                                <input type="checkbox" name="addon" value="brushOut" id="brushOut">Brush Out - $10<br>
+                                <input type="checkbox" name="addon" value="analGlands" id="analGlands">External Anal Glands - $15<br>
+                                <input type="checkbox" name="addon" value="deshedding" id="deshedding">Deshedding Treatment - $25<br>
+                            </fieldset>
+                </form>
+                <button class="button" id="addonChoices">Submit Choices</button>
+                </div>
+
+        </div>
+
+{{!-- confirmation message will be sent from JavaScript file --}}
+ <div id="confirmationMessage"></div>
+ 
+</div>
 
 <script src="/js/services.js"></script>
