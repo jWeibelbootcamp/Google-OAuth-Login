@@ -22,9 +22,14 @@ router.get('/dashboard', (req, res) => {
     res.render('dashboard')
 });
 
+
 router.get('/services', (req, res) => {
     res.render('services')
+
+router.get('/dashboard/new', (req, res) => {
+    res.render('newdog')
 });
+
 
 
 module.exports = router; 
